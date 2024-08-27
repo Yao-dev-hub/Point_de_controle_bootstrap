@@ -1,34 +1,85 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/*Pour rendre invisible sur mobile*/
+.visible {
+    display: none;
 }
 
-#navbarColor03 {
-    display: flex;
-    justify-content: end;
+/*Couleur du bandon de la navbar*/
+.bg-sm-light {
+    color: #ffffff;
+    background-color: #1374c9;
 }
 
-.banniere {
-    width: 100%;
-    height: 500px;
-    background-image: url(../images/banniere4.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+/*Texte noir pour les mobile*/
+.mobile-nav-text {
+    color: #ffffff;
 }
 
-.sous-container{
-    background-image: url(../images/vtmt-fille.jfif);
-    width: 100%;
-    height: 400px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+/*Affiche les icones de paniers et la recherche sur mobile*/
+.mobile-visible {
+    display: block;
 }
 
-.footer {
-    height: 480px;
+@media (min-width: 1000px) {
+    .visible {
+        display: block;
+    }
+    .mobile-visible {
+        display: none;
+    }
+    .bg-sm-light {
+        color: #ffff;
+        background-color: #121920;
+    }
+
+    .mobile-nav-text {
+        color: #fff;
+    }
+    
+}
+
+/*Pour placer le trait en bas des devices et connexion*/
+.boder-botom {
+    border-bottom: 1px solid #bebebe;
+}
+
+/*pour le logo*/
+.container-logo {
     padding: 20px;
 }
 
+/*Marge pour positionner à gauche si text-end ne fonctionne pas*/
+.marge {
+    text-align: left;
+    padding-left: 300px;
+}
+
+/*Ajustement de la marge du logo sur le mobile*/
+@media (max-width: 700px) {
+    .marge {
+        text-align: left;
+        padding-left: 0;
+    }
+  }
+
+  /*pour donner un style rond cliquable à l'icone du panier*/
+.shop-icon {
+    color: #000;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 1px solid #bebebe;
+    border-radius: 50%;
+    text-align: center;
+    padding: 12px 12px 10px 10px;
+}
+
+.shop-icon:hover{
+    color: #ffff;
+    width: 50px;
+    height: 50px;
+    background-color: #ff5dec;
+    border-radius: 50%;
+    text-align: center;
+    padding: 12px 12px 10px 10px;
+    transition: .3s;
+}
