@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbarColor03 {
+    display: flex;
+    justify-content: end;
+}
+
+.banniere {
+    width: 100%;
+    height: 500px;
+    background-image: url(../images/banniere4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sous-container{
+    background-image: url(../images/vtmt-fille.jfif);
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.footer {
+    height: 480px;
+    padding: 20px;
+}
+
