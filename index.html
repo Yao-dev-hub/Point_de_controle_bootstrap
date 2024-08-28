@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boutique de Vetements</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boutique de Vetements</title>
 
-    <!-- importation de bootstrap -->
-    <link rel="stylesheet" href="/css/bootstrap.css">
+  <!-- importation de bootstrap -->
+  <link rel="stylesheet" href="/css/bootstrap.css">
 
-    <!-- importation des font pour les icones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- importation des font pour les icones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-     <!-- style personnel -->
-    <link rel="stylesheet" href="/css/style.css">
-  </head>
+  <!-- style personnel -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
 <body>
 
   <!-- En tete uniquement afficher sur ecran large -->
-   <section class="container-fluid visible">
+  <section class="container-fluid visible">
 
     <!-- Langue et connection -->
     <div class="row py-2 boder-botom">
@@ -25,7 +29,8 @@
       <div class="col-lg-6">
         <ul class="nav nav-pills">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-black" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Devices</a>
+            <a class="nav-link dropdown-toggle text-black" data-bs-toggle="dropdown" href="#" role="button"
+              aria-haspopup="true" aria-expanded="false">Devices</a>
             <div class="dropdown-menu">
               <a class="dropdown-item text-black" href="#">Francs CFA - XOF</a>
               <a class="dropdown-item text-black" href="#">Dollars - $</a>
@@ -33,7 +38,8 @@
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-black" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Langue - Français</a>
+            <a class="nav-link dropdown-toggle text-black" data-bs-toggle="dropdown" href="#" role="button"
+              aria-haspopup="true" aria-expanded="false">Langue - Français</a>
             <div class="dropdown-menu">
               <a class="dropdown-item text-black" href="#">Français</a>
               <a class="dropdown-item text-black" href="#">Anglais</a>
@@ -43,40 +49,40 @@
       </div>
       <!-- Cretation et connexion -->
       <div class="col-lg-6 marge">
-          <ul class="nav nav-pills text-end">
-            <li class="nav-item"><a href="#" class="nav-link text-black">Se connecter</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-black">Créer un compte</a></li>
-          </ul>
+        <ul class="nav nav-pills text-end">
+          <li class="nav-item"><a href="#" class="nav-link text-black">Se connecter</a></li>
+          <li class="nav-item"><a href="#" class="nav-link text-black">Créer un compte</a></li>
+        </ul>
       </div>
     </div>
 
     <div class="container-logo">
       <div class="row align-items-center">
         <!-- Champ de recherche -->
-         <div class="col-lg-4 text-start">
-            <form action="#">
-              <div class="input-group mb-3">
-                <input type="text" class="form-control" aria-label="" placeholder="Rechercher un élément">
-                <span class="input-group-text"><i class="fa fa-search"></i></span>
-              </div>
-            </form>
-         </div>
-         <!-- Logo -->
-          <div class="col-lg-4 text-center">
-            <a href="/" class="logo"><img src="/images/logo.png" class="img-fluid" alt="Logo"></a>
+        <div class="col-lg-4 text-start">
+          <form action="#">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" aria-label="" placeholder="Rechercher un élément">
+              <span class="input-group-text"><i class="fa fa-search"></i></span>
+            </div>
+          </form>
+        </div>
+        <!-- Logo -->
+        <div class="col-lg-4 text-center">
+          <a href="/" class="logo"><img src="/images/logo.png" class="img-fluid" alt="Logo"></a>
+        </div>
+        <!-- Panier -->
+        <div class="col-lg-4 text-end marge">
+          <div class="d-flex">
+            <div class="shop-icon text-center">
+              <i class="fa fa-shopping-cart"></i>
+            </div>
+            <p class="text-start mx-2">Panier
+              <br>
+              <span class="text-secondary">0 élément</span>
+            </p>
           </div>
-          <!-- Panier -->
-           <div class="col-lg-4 text-end marge">
-                 <div class="d-flex">
-                     <div class="shop-icon text-center">
-                    <i class="fa fa-shopping-cart"></i>
-                  </div>
-                  <p class="text-start mx-2">Panier
-                    <br>
-                    <span class="text-secondary">0 élément</span>
-                  </p>
-                 </div>
-           </div>
+        </div>
       </div>
     </div>
 
@@ -87,14 +93,16 @@
     <div class="container-fluid">
 
       <div class="d-flex align-items-center flex-center">
-          <!-- Pour affichier le menu sur mobile -->
-      <a class="navbar-toggler mobile-nav-text text-black" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon mobile-nav-text"></span>
-      </a>
+        <!-- Pour affichier le menu sur mobile -->
+        <a class="navbar-toggler mobile-nav-text text-black border-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon mobile-nav-text"></span>
+        </a>
 
-      <!-- Logo -->
-       <a href="/" class="text-start mobile-visible mx-4">
-        <img src="/images/logo.png" class="img-fluid" alt="Logo"></a>
+        <!-- Logo -->
+        <a href="/" class="text-start mobile-visible">
+          <img src="/images/logo.png" class="img-fluid" width="60%" alt="Logo"></a>
       </div>
 
       <!-- Iconnes de recherche et paniers -->
@@ -102,7 +110,7 @@
         <a href="#" class="mobile-nav-text fs-4 me-3"><i class="fa fa-search"></i></a>
         <a href="#" class="mobile-nav-text fs-4"><i class="fa fa-shopping-cart"></i></a>
       </div>
-      
+
 
       <div class="collapse navbar-collapse" id="navbarColor01">
         <ul class="navbar-nav mx-auto">
@@ -110,7 +118,8 @@
             <a class="nav-link active mobile-nav-text" href="#">Accueil</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle mobile-nav-text" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Habillements</a>
+            <a class="nav-link dropdown-toggle mobile-nav-text" data-bs-toggle="dropdown" href="#" role="button"
+              aria-haspopup="true" aria-expanded="false">Habillements</a>
             <div class="dropdown-menu">
               <a class="dropdown-item" href="#">Homme</a>
               <a class="dropdown-item" href="#">Femmes</a>
@@ -118,7 +127,8 @@
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle mobile-nav-text" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Electroniques</a>
+            <a class="nav-link dropdown-toggle mobile-nav-text" data-bs-toggle="dropdown" href="#" role="button"
+              aria-haspopup="true" aria-expanded="false">Electroniques</a>
             <div class="dropdown-menu">
               <a class="dropdown-item" href="#">Electromenagers</a>
               <a class="dropdown-item" href="#">Ordinateurs et téléphones</a>
@@ -140,9 +150,244 @@
       </div>
     </div>
   </nav>
-  
 
-   <!-- importation du JS bootstrap pour le mobile first -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- Insertion de la banniere -->
+  <div class="baniere align-items-center justify-content-center mb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <p class="fashion">
+            <span>Jusqu'à</span>
+            <span class="text-success">30%</span>
+            <br>
+            <span class="fw-bold">SALE</span>
+            <br>
+            <span class="bold">Fashion branh</span>
+          </p>
+          <a href="#" class="btn btn-success btn-lg">Acheter maintenant</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Nouveau produits -->
+  <section class="rencent-product align-items-center justify-content-center mb-5">
+    <div class="container">
+      <div class="title mb-3">
+        <h2 class="text-center fw-bold">Produits à lune</h2>
+      </div>
+      <div class="row">
+
+        <!-- Items -->
+        <div class="col-lg-3 mb-3">
+          <div class="card show-items">
+            <div class="card-body">
+
+              <div class="image" style="background-image: url(/images/p1.jpg);">
+
+                <div class="new">
+                  <div class="shop-icon active text-center mb-2 bg-black">
+                    N
+                  </div>
+                  <div class="shop-icon active text-center mb-2 bg-danger">
+                    V
+                  </div>
+                </div>
+
+                <div class="items">
+                  <div class="shop-icon active text-center mb-2">
+                    <i class="fa fa-shopping-cart"></i>
+                  </div>
+                  <div class="shop-icon text-center mb-2">
+                    <i class="fa fa-heart"></i>
+                  </div>
+                  <div class="shop-icon text-center mb-2">
+                    <i class="fa fa-bar-chart"></i>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="text-center">
+                <p>Lorem ipsum dolor sit amet</p>
+                <p class="fw-bold text-success">30 000 FCFA</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+                <!-- Items -->
+                <div class="col-lg-3 mb-3">
+                  <div class="card show-items">
+                    <div class="card-body">
+        
+                      <div class="image" style="background-image: url(/images/p1.jpg);">
+        
+                        <div class="new">
+                          <div class="shop-icon active text-center mb-2 bg-black">
+                            N
+                          </div>
+                          <div class="shop-icon active text-center mb-2 bg-danger">
+                            V
+                          </div>
+                        </div>
+        
+                        <div class="items">
+                          <div class="shop-icon active text-center mb-2">
+                            <i class="fa fa-shopping-cart"></i>
+                          </div>
+                          <div class="shop-icon text-center mb-2">
+                            <i class="fa fa-heart"></i>
+                          </div>
+                          <div class="shop-icon text-center mb-2">
+                            <i class="fa fa-bar-chart"></i>
+                          </div>
+                        </div>
+        
+                      </div>
+        
+                      <div class="text-center">
+                        <p>Lorem ipsum dolor sit amet</p>
+                        <p class="fw-bold text-success">30 000 FCFA</p>
+                      </div>
+        
+                    </div>
+                  </div>
+                </div>
+
+                        <!-- Items -->
+        <div class="col-lg-3 mb-3">
+          <div class="card show-items">
+            <div class="card-body">
+
+              <div class="image" style="background-image: url(/images/p1.jpg);">
+
+                <div class="new">
+                  <div class="shop-icon active text-center mb-2 bg-black">
+                    N
+                  </div>
+                  <div class="shop-icon active text-center mb-2 bg-danger">
+                    V
+                  </div>
+                </div>
+
+                <div class="items">
+                  <div class="shop-icon active text-center mb-2">
+                    <i class="fa fa-shopping-cart"></i>
+                  </div>
+                  <div class="shop-icon text-center mb-2">
+                    <i class="fa fa-heart"></i>
+                  </div>
+                  <div class="shop-icon text-center mb-2">
+                    <i class="fa fa-bar-chart"></i>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="text-center">
+                <p>Lorem ipsum dolor sit amet</p>
+                <p class="fw-bold text-success">30 000 FCFA</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+                <!-- Items -->
+                <div class="col-lg-3 mb-3">
+                  <div class="card show-items">
+                    <div class="card-body">
+        
+                      <div class="image" style="background-image: url(/images/p1.jpg);">
+        
+                        <div class="new">
+                          <div class="shop-icon active text-center mb-2 bg-black">
+                            N
+                          </div>
+                          <div class="shop-icon active text-center mb-2 bg-danger">
+                            V
+                          </div>
+                        </div>
+        
+                        <div class="items">
+                          <div class="shop-icon active text-center mb-2">
+                            <i class="fa fa-shopping-cart"></i>
+                          </div>
+                          <div class="shop-icon text-center mb-2">
+                            <i class="fa fa-heart"></i>
+                          </div>
+                          <div class="shop-icon text-center mb-2">
+                            <i class="fa fa-bar-chart"></i>
+                          </div>
+                        </div>
+        
+                      </div>
+        
+                      <div class="text-center">
+                        <p>Lorem ipsum dolor sit amet</p>
+                        <p class="fw-bold text-success">30 000 FCFA</p>
+                      </div>
+        
+                    </div>
+                  </div>
+                </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--  insertion d'images femme et homme -->
+    <section class="two-persons py-5">
+      <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="card image" style="background-image: url(images/adv-image-2.png);">
+                <div class="card-body pt-5" >
+                  <p class="h3">
+                      <span class="fw-bold">Homme</span>
+                      <br>
+                      <span>Collection</span>
+                      <br>
+                      <span>Acheter <i class="fa fa-long-arrow-right tall"></i></span>
+                  </p>
+                </div>
+            </div>
+          </div>
+
+              <div class="col-lg-6">
+                <div class="card image" style="background-image: url(images/woman.png);">
+                  <div class="card-body pt-5" >
+                    <p class="h3">
+                        <span class="fw-bold">Femme</span>
+                        <br>
+                        <span>Collection</span>
+                        <br>
+                        <span>Acheter <i class="fa fa-long-arrow-right tall"></i></span>
+                    </p>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+            <div class="col-3">
+
+            </div>
+        </div>
+      </div>
+    </section>
+
+
+  <!-- importation du JS bootstrap pour le mobile first -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
